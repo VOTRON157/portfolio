@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="flex fixed w-full bg-white h-16 flex-row shadow-md text-black justify-between" id="navbar">
+            <div class="p-5 flex items-center" id="esquerda">
+                <a href="#">
+                    <p class="text-3xl font-serif">
+                        Mateus
+                    </p>
+                </a>
+            </div>
+            <div class="hidden p-5 sm:flex items-center" id="direita">
+                <ul class="flex gap-6">
+                    <li>
+                        <a href="#" onclick="alert('Ainda não tem')" ><button
+                                class="p-2 px-6 bg-blue-500 rounded hover:bg-blue-600 text-white duration-200 focus:ring-4 focus:ring-blue-700 focus:ring-opacity-50">Projetos</button></a>
+                    </li>
+                    <li>
+                        <a href="#habilidades"><button
+                                class="p-2 px-6 bg-blue-500 rounded hover:bg-blue-600 text-white duration-200 focus:ring-4 focus:ring-blue-700 focus:ring-opacity-50">Tecnologias</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sm:hidden flex p-5 items-center">
+                <button
+                    class="p-2 w-28 bg-blue-500 rounded hover:bg-blue-600 text-white duration-200 focus:ring-4 focus:ring-blue-700 focus:ring-opacity-50"
+                    id="dropdown">
+                    Menu
+                </button>
+            </div>
+            <div class="absolute z-10 hidden right-5 top-14 rounded-sm shadow-md bg-white" id="dropitem">
+                <ul class="flex flex-col right-7">
+                    <li><a class="px-5 p-2 block hover:bg-gray-100 duration-300" href="#">Tecnologias</a></li>
+                    <li><a class="px-5 p-2 block hover:bg-gray-100 duration-300" href="#" onclick="alert('Ainda não tem')">Projetos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="flex pt-16 h-screen">
+            <div class="w-100 md:w-1/2 flex flex-col items-center justify-center">
+                <div class="font-serif w-full md:pl-48 pl-3">
+                    <p class="lg:text-6xl text-4xl">Olá, meu nome é <span class="text-blue-500">Mateus</span>.
+                    </p>
+                    <p class="max-w-xl ml-1">Tenho 16 anos, programando deste os 13, venho tentando encontrar meu lugar
+                        nesse mundo de técnologia.</p>
+                </div>
+                <div class="flex gap-4 my-3 md:pl-48 pl-3 w-full">
+                    <button
+                        class="p-2 rounded ring-2 ring-blue-500 duration-200 hover:bg-blue-500 hover:text-white px-5">Me
+                        contate</button>
+                    <a href="https://github.com/VOTRON157" target="_blank"><button
+                            class="p-2 rounded text-white bg-blue-500 ring-2 ring-blue-500 duration-200 hover:bg-white hover:text-black px-5">Github</button></a>
+                </div>
+                <div class="md:pl-48 pl-3 w-full mt-2">
+                    <a href="https://www.pensador.com/frase/MTMwMjY/" target="_blank" class="italic text-blue-500">"Se
+                        eu vi mais longe, foi por estar sobre ombros de gigantes."<br>- Isaac Newton</a>
+                </div>
+            </div>
+            <div class="hidden md:w-1/2 md:flex justify-start items-center">
+                <img src="/images/foto1.png" width="70%">
+            </div>
+        </div>
+        <section id="habilidades">
+            <div class="bg-gray-100 flex flex-col" style="height: calc(100vh - 64px);">
+                <div class="flex h-full">
+                    <div class="hidden md:w-1/2 md:flex justify-center items-center">
+                        <img src="/images/foto2.png" width="70%">
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col items-center justify-center">
+                        <div>
+                            <p class="text-6xl mb-6 font-serif"><span class="text-blue-500">Tec</span>nologias</p>
+                        </div>
+                        <div class="h-80 flex w-full text-white overflow-x-scroll gap-9 p-4" id="tec">
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/js.png" width="140">
+                                <p class="text-2xl font-serif mt-7">JavaScript</p>
+                            </div>
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/ts.png" width="140">
+                                <p class="text-2xl font-serif mt-7">TypeScript</p>
+                            </div>
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/html.png" width="140">
+                                <p class="text-2xl font-serif mt-7">HTML5</p>
+                            </div>
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/css.png" width="140">
+                                <p class="text-2xl font-serif mt-7">CSS3</p>
+                            </div>
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/jquery.png" width="140">
+                                <p class="text-2xl font-serif mt-7">Jquery</p>
+                            </div>
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/express.png" width="140">
+                                <p class="text-2xl font-serif mt-7">ExpressJS</p>
+                            </div>
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/nodejs.png" width="140">
+                                <p class="text-2xl font-serif mt-7">NodeJS</p>
+                            </div>
+                            <div
+                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
+                                <img src="/images/tailwindcss.png" width="140">
+                                <p class="text-2xl font-serif mt-7">Tailwindcss</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-serif text-justify p-5 italic">Destaco a importância de utilizar tecnologias
+                                atualizadas e relevantes para impulsionar a eficiência e a inovação nos projetos. Ao
+                                adotar ferramentas tecnológicas modernas, é possível criar soluções robustas e
+                                escaláveis, além de proporcionar uma experiência aprimorada aos usuários finais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $("#dropdown").click(() => {
+            const drop = $("#dropitem").css("display")
+            if (drop == "none") $("#dropitem").css("display", "block")
+            else $("#dropitem").css("display", "none")
+        })
+    </script>
+</body>
+
+</html>
