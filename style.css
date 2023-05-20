@@ -1,21 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+/* scroll do body */
+
 ::-webkit-scrollbar {
     width: 10px;
     border-radius: 2px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: gray;
     border-radius: 2px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: rgb(59 130 246);
     border-radius: 10px;
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(59 130 246);
+    background: rgb(16, 101, 240);
+}
+
+/*scroll da div de habilidades */
+
+.custom-scroll::-webkit-scrollbar-track  {
+    background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+body {
+    font-family: 'IBM Plex Serif', serif;
 }

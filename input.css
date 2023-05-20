@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply p-2 px-5 hover:bg-blue-600 bg-blue-500 duration-300 rounded-md hover:ring-4 text-white;
+    }
+    .btn-outline-primary {
+        @apply p-2 rounded text-white bg-blue-500 ring-2 ring-blue-500 duration-200 hover:bg-white hover:text-black px-5;
+    }
+    .tec-info {
+        @apply backdrop-blur-md shadow-md absolute z-10 h-0 overflow-hidden w-full md:w-1/2 flex items-center justify-center flex-col;
+    }
+
+    .tec-info-desc {
+        @apply text-justify max-w-[650px];
+    }
+
+    .tec-info-button {
+        @apply mt-5 p-2 px-6 bg-red-500 rounded hover:bg-red-600 text-white duration-200 focus:ring-4 focus:ring-red-700 focus:ring-opacity-50;
+    }
+
+    .tec-info-name {
+        @apply text-2xl font-sans font-semibold mt-4 mb-3;
+    }
+
+    .tec-info-image {
+        @apply w-32 h-32;
+    }
+}

@@ -19,25 +19,24 @@
 
 <body>
     <header>
-        <nav class="flex fixed w-full bg-white h-16 flex-row shadow-md text-black justify-between" id="navbar">
+        <nav class="z-50 flex fixed w-full bg-white h-16 flex-row shadow-md duration-500 text-black justify-between" id="navbar">
             <div class="p-5 flex items-center" id="esquerda">
-                <a href="#">
-                    <p class="text-3xl font-serif">
+                <a href="#sobremim">
+                    <p class="text-3xl ">
                         Mateus
                     </p>
                 </a>
             </div>
-            <div class="hidden p-5 sm:flex items-center" id="direita">
-                <ul class="flex gap-6">
-                    <li>
-                        <a href="#" onclick="alert('Ainda não tem')" ><button
-                                class="p-2 px-6 bg-blue-500 rounded hover:bg-blue-600 text-white duration-200 focus:ring-4 focus:ring-blue-700 focus:ring-opacity-50">Projetos</button></a>
-                    </li>
-                    <li>
-                        <a href="#habilidades"><button
-                                class="p-2 px-6 bg-blue-500 rounded hover:bg-blue-600 text-white duration-200 focus:ring-4 focus:ring-blue-700 focus:ring-opacity-50">Tecnologias</button></a>
-                    </li>
-                </ul>
+            <div class=" hidden p-5 sm:flex items-center" id="direita">
+                        <ul class="flex gap-6">
+                            <li>
+                                <a href="#" onclick="alert('Ainda não tem')"><button
+                                        class="btn-primary">Projetos</button></a>
+                            </li>
+                            <li>
+                                <a href="#habilidades"><button class="btn-primary">Tecnologias</button></a>
+                            </li>
+                        </ul>
             </div>
             <div class="sm:hidden flex p-5 items-center">
                 <button
@@ -48,108 +47,238 @@
             </div>
             <div class="absolute z-10 hidden right-5 top-14 rounded-sm shadow-md bg-white" id="dropitem">
                 <ul class="flex flex-col right-7">
-                    <li><a class="px-5 p-2 block hover:bg-gray-100 duration-300" href="#">Tecnologias</a></li>
-                    <li><a class="px-5 p-2 block hover:bg-gray-100 duration-300" href="#" onclick="alert('Ainda não tem')">Projetos</a></li>
+                    <li><a class="px-5 p-2 block hover:bg-gray-100 duration-300" href="#habilidades">Tecnologias</a>
+                    </li>
+                    <li><a class="px-5 p-2 block hover:bg-gray-100 duration-300" href="#"
+                            onclick="alert('Ainda não tem')">Projetos</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="flex pt-16 h-screen">
-            <div class="w-100 md:w-1/2 flex flex-col items-center justify-center">
-                <div class="font-serif w-full md:pl-48 pl-3">
-                    <p class="lg:text-6xl text-4xl">Olá, meu nome é <span class="text-blue-500">Mateus</span>.
-                    </p>
-                    <p class="max-w-xl ml-1">Tenho 16 anos, programando deste os 13, venho tentando encontrar meu lugar
-                        nesse mundo de técnologia.</p>
-                </div>
-                <div class="flex gap-4 my-3 md:pl-48 pl-3 w-full">
-                    <button
-                        class="p-2 rounded ring-2 ring-blue-500 duration-200 hover:bg-blue-500 hover:text-white px-5">Me
-                        contate</button>
-                    <a href="https://github.com/VOTRON157" target="_blank"><button
-                            class="p-2 rounded text-white bg-blue-500 ring-2 ring-blue-500 duration-200 hover:bg-white hover:text-black px-5">Github</button></a>
-                </div>
-                <div class="md:pl-48 pl-3 w-full mt-2">
-                    <a href="https://www.pensador.com/frase/MTMwMjY/" target="_blank" class="italic text-blue-500">"Se
-                        eu vi mais longe, foi por estar sobre ombros de gigantes."<br>- Isaac Newton</a>
-                </div>
-            </div>
-            <div class="hidden md:w-1/2 md:flex justify-start items-center">
-                <img src="https://media.discordapp.net/attachments/1061801055077277786/1108549378152595567/zNJyn-4D.png" width="70%">
-            </div>
-        </div>
-        <section id="habilidades">
-            <div class="bg-gray-100 flex flex-col" style="height: calc(100vh - 64px);">
-                <div class="flex h-full">
-                    <div class="hidden md:w-1/2 md:flex justify-center items-center">
-                        <img src="https://media.discordapp.net/attachments/1061801055077277786/1108579989315661924/o4TFSJjL.png" width="70%">
+        <section id="sobremim">
+            <div class="flex pt-16 h-screen">
+                <div class="w-100 md:w-1/2 flex flex-col items-center justify-center">
+                    <div class=" w-full md:pl-48 pl-3">
+                        <p class="lg:text-6xl text-4xl">Olá, meu nome é <span class="text-blue-500">Mateus</span>.
+                        </p>
+                        <p class="max-w-xl ml-1">Tenho 16 anos, programando deste os 13, venho tentando encontrar meu
+                            lugar
+                            nesse mundo de técnologia.</p>
                     </div>
-                    <div class="w-full md:w-1/2 flex flex-col items-center justify-center">
-                        <div>
-                            <p class="text-6xl mb-6 font-serif"><span class="text-blue-500">Tec</span>nologias</p>
+                    <div class="flex gap-4 my-3 md:pl-48 pl-3 w-full">
+                        <button
+                            class="p-2 rounded ring-2 ring-blue-500 duration-200 hover:bg-blue-500 hover:text-white px-5">Me
+                            contate</button>
+                        <a href="https://github.com/VOTRON157" target="_blank"><button
+                                class="btn-outline-primary">Github</button></a>
+                    </div>
+                    <div class="md:pl-48 pl-3 w-full mt-2">
+                        <a href="https://www.pensador.com/frase/MTMwMjY/" target="_blank"
+                            class="italic text-blue-500">"Se
+                            eu vi mais longe, foi por estar sobre ombros de gigantes."<br>- Isaac Newton</a>
+                    </div>
+                </div>
+                <div class="hidden md:w-1/2 md:flex justify-center items-center">
+                    <img src="./images/fundo1.svg" class="absolute self-center drop-shadow-2xl" width="40%">
+                    <img src="./images/eu1.png"
+                        width="70%" class="drop-shadow-2xl">
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <div class="bg-gray-100 flex flex-col">
+                <div class="flex h-screen" id="para-calcular">
+                    <div class="tec-info" id="tec-info">
+                        <div class="rounded bg-zinc-200 min-w-fit min-h-fit border-l-4 border-l-blue-500 shadow-md p-4 m-2"
+                            id="tec-info-card">
+                            <img class="tec-info-image">
+                            <p class="tec-info-name"></p>
+                            <p class="tec-info-desc"></p>
+                            <button class="tec-info-button" onclick="fecharTec()">Fechar</button>
                         </div>
-                        <div class="h-80 flex w-full text-white overflow-x-scroll gap-9 p-4" id="tec">
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/js.png" width="140">
-                                <p class="text-2xl font-serif mt-7">JavaScript</p>
+                    </div>
+                    <div class="hidden md:w-1/2 md:flex justify-center items-center">
+                        <img src="./images/fundo2.svg" class="absolute self-center drop-shadow-2xl" width="37%">
+                        <img src="./images/eu2.png"
+                            width="70%" class="drop-shadow-2xl">
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col items-center justify-center p-10" id="tecs-slide">
+                        <div>
+                            <p class="text-5xl md:text-6xl mb-6 "><span
+                                    class=" text-blue-500">Tec</span>nologias</p>
+                        </div>
+                        <div class="custom-scroll h-80 flex w-full text-white items-center overflow-x-scroll gap-9 p-4">
+                            <div id="js"
+                                class="active:scale-95 cursor-pointer text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/js.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl mt-7">JavaScript</p>
                             </div>
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/ts.png" width="140">
-                                <p class="text-2xl font-serif mt-7">TypeScript</p>
+                            <div id="ts"
+                                class="active:scale-95 text-zinc-800 cursor-pointer rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/ts.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">TypeScript</p>
                             </div>
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/html.png" width="140">
-                                <p class="text-2xl font-serif mt-7">HTML5</p>
+                            <div id="html"
+                                class="active:scale-95 text-zinc-800 rounded cursor-pointer duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/html.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">HTML5</p>
                             </div>
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/css.png" width="140">
-                                <p class="text-2xl font-serif mt-7">CSS3</p>
+                            <div id="css"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 cursor-pointer bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit  h-fit p-8">
+                                <img src="./images/css.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl mt-7">CSS3</p>
                             </div>
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/jquery.png" width="140">
-                                <p class="text-2xl font-serif mt-7">Jquery</p>
+                            <div id="jquery"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 cursor-pointer shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/jquery.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">jQuery</p>
                             </div>
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/express.png" width="140">
-                                <p class="text-2xl font-serif mt-7">ExpressJS</p>
+                            <div id="express"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 cursor-pointer hover:scale-105 flex items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/express.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">ExpressJS</p>
                             </div>
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/nodejs.png" width="140">
-                                <p class="text-2xl font-serif mt-7">NodeJS</p>
+                            <div id="nodejs"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 cursor-pointer flex items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/nodejs.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">NodeJS</p>
                             </div>
-                            <div
-                                class="text-zinc-800 rounded duration-200 bg-zinc-200 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center flex-col min-w-fit p-8">
-                                <img src="./images/tailwindcss.png" width="140">
-                                <p class="text-2xl font-serif mt-7">Tailwindcss</p>
+                            <div id="tailwindcss"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex items-center cursor-pointer  flex-col min-w-fit h-fit p-8">
+                                <img src="./images/tailwindcss.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">Tailwindcss</p>
+                            </div>
+                            <div id="vscode"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex cursor-pointer items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/vscode.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-base mt-7">Visual Studio Code</p>
+                            </div>
+                            <div id="windows"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex cursor-pointer items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/windows.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">Windows</p>
+                            </div>
+                            <div id="ejs"
+                                class="active:scale-95 text-zinc-800 rounded duration-200 bg-gradient-to-br from-zinc-50 to-zinc-300 shadow-md hover:bg-zinc-300 hover:scale-105 flex cursor-pointer items-center flex-col min-w-fit h-fit p-8">
+                                <img src="./images/ejs.png" class="h-24 w-24 md:h-32 md:w-32">
+                                <p class="text-2xl  mt-7">EJS</p>
                             </div>
                         </div>
-                        <div>
-                            <p class="font-serif text-justify p-5 italic">Destaco a importância de utilizar tecnologias
-                                atualizadas e relevantes para impulsionar a eficiência e a inovação nos projetos. Ao
-                                adotar ferramentas tecnológicas modernas, é possível criar soluções robustas e
-                                escaláveis, além de proporcionar uma experiência aprimorada aos usuários finais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <div class="flex h-full bg-white">
+                <div class="flex flex-col h-full items-center w-full justify-center p-10">
+                    <p class="text-5xl">Proje<span class="text-blue-500">tos</span></p>
+                    <div class="custom-scroll mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4 p-0 sm:p-2 max-w-[1050px]">
+                        <div class="border-2 border-zinc-100 bg-zinc-50 p-0 rounded shadow-md bg pb-3 group overflow-clip">
+                            <div class="overflow-clip">
+                                <img src="https://media.discordapp.net/attachments/818572573146218532/1109296029569916958/image.png?width=1191&height=670"
+                                    class="w-full group-hover:scale-110 duration-700">
+                            </div>
+                            <p class="text-2xl m-3 ">Portfolio</p>
+                            <p class=" ml-3 mb-3 text-zinc-700">Site do meu portófolio, contendo minhas
+                                habilidades e minhas
+                                informações.</p>
+                            <div class="gap-2 flex items-center">
+                                <span></span>
+                                <a href="https://github.com/VOTRON157/portfolio" target="_blank">
+                                    <button class="btn-primary">
+                                        Repositorio
+                                    </button>
+                                </a>
+                                <button class="btn-primary">
+                                    Acessar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border-2 border-zinc-100 bg-zinc-50 p-0 rounded shadow-md bg pb-3 group overflow-clip">
+                            <div class="overflow-clip">
+                                <img src="https://camo.githubusercontent.com/40cd59b45cc2b5a6c3bc04ab82975d32e0b2bb4fa96d91d6083874e00f518117/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3732323838373134303732333339323632352f313037363730313734353435323935333732302f696d6167652e706e673f77696474683d31313933266865696768743d363731"
+                                    class="w-full group-hover:scale-110 duration-700">
+                            </div>
+                            <p class="text-2xl m-3">Gerador de imagens</p>
+                            <p class=" ml-3 mb-3 text-zinc-700">Este projeto utiliza inteligência artificial
+                                para gerar imagens personalizadas a partir de descrições textuais fornecidas pelo
+                                usuário.</p>
+                            <div class="gap-2 flex items-center">
+                                <span></span>
+                                <a href="https://github.com/VOTRON157/text2Img" target="_blank"><button
+                                        class="btn-primary">
+                                        Repositorio
+                                    </button></a>
+                            </div>
+                        </div>
+                        <div class="border-2 border-zinc-100 bg-zinc-50 p-0 rounded shadow-md bg pb-3 group overflow-clip">
+                            <div class="overflow-clip">
+                                <img src="https://github.com/VOTRON157/lobby-reveal/raw/master/images/exemplo.png"
+                                    class="w-full group-hover:scale-110 duration-700">
+                            </div>
+                            <p class="text-2xl m-3 ">Lobby Reveal</p>
+                            <p class=" ml-3 mb-3 text-zinc-700">Programa simples para mostrar os nomes de usuário de
+                                seus colegas de equipe no League of Legends em partidas ranqueadas.</p>
+                            <div class="gap-2 flex items-center">
+                                <span></span>
+                                <a href="https://github.com/VOTRON157/lobby-reveal" target="_blank"><button
+                                        class="btn-primary">
+                                        Repositorio
+                                    </button></a>
+                            </div>
+                        </div>
+                        <div class="border-2 border-zinc-100 bg-zinc-50 p-0 rounded shadow-md bg pb-3 group overflow-clip">
+                            <div class="overflow-clip">
+                                <img src="https://media.discordapp.net/attachments/818572573146218532/1109459699897741383/image.png?width=1346&height=671"
+                                    class="w-full group-hover:scale-110 duration-700">
+                            </div>
+                            <p class="text-2xl m-3">Minha Lista de Anime</p>
+                            <p class=" ml-3 mb-3 text-zinc-700">Site para ver informações sobre animes, sendo
+                                possivel também assistir aos episodios.</p>
+                            <div class="gap-2 flex items-center">
+                                <span></span>
+                                <a href="https://github.com/VOTRON157/lobby-reveal" target="_blank"><button
+                                        class="btn-primary">
+                                        Repositorio
+                                    </button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <section id="footer">
+        <footer class="bg-black">
+            <div class="h-80 flex-col flex sm:flex-row pl-4 justify-around pt-5 text-white">
+                <div class="flex flex-col">
+                    <p class="text-2xl">Mateus<span class="text-blue-500">.</span></p>
+                    <ul class="mt-3 flex flex-col gap-2">
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                        <li>
+                            <a href="#">Redes socials</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <p class="text-2xl">Sobre<span class="text-blue-500">.</span></p>
+                    <p class="max-w-[440px] text-justify mt-3">O objetivo desse portfolio foi criar um ambiente onda eu consiga guardar todos os meus projetos, de forma mais facil, além de poder encontrar pessoas com o qual eu possa ajudar em seus projetos :).</p>
+                </div>
+            </div>
+            <hr class="border-zinc-700 outline-none">
+            <div class="text-zinc-200 p-4 text-sm">
+                Copyright © 2023 Mateus Mendes. Todos os direitos reservados.
+            </div>
+        </footer>
+    </section>
+
+    <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script>
-        $("#dropdown").click(() => {
-            const drop = $("#dropitem").css("display")
-            if (drop == "none") $("#dropitem").css("display", "block")
-            else $("#dropitem").css("display", "none")
-        })
-    </script>
+    <!-- JS do site -->
+    <script src="./js/site.js"></script>
 </body>
 
 </html>
