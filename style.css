@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /* scroll do body */
 
 ::-webkit-scrollbar {
@@ -35,5 +34,14 @@
 }
 
 body {
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+@keyframes dropdown_entrada {
+    from {
+        top: 0%;
+    }
+    tp {
+        top: 100%;
+    }
 }
